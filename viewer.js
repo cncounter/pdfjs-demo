@@ -3567,6 +3567,7 @@ exports.PDFFindController = PDFFindController;
 
 
 var DEFAULT_URL = 'js_regex_mini.pdf';
+    DEFAULT_URL = 'Redis_security.pdf';
 ;
 var pdfjsWebApp = void 0;
 {
