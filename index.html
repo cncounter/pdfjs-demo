@@ -35,12 +35,18 @@ See https://github.com/adobe-type-tools/cmap-resources
 <!-- This snippet is used in production (included from viewer.html) -->
 <link rel="resource" type="application/l10n" href="locale/locale.properties">
 <script>
+
+window.onload=function(){
+function toGithubFn(){
 var githubProjectURL = "https://github.com/mozilla/pdf.js/releases";
 var toGithub = window.confirm("前往GitHub项目地址?");
 if(toGithub){
 	window.history.pushState(location.href, location.href);
 	window.location.href = githubProjectURL;
 }
+};
+window.setTimeout(toGithubFn, 10*1000);
+};
 </script>
 <script src="./pdf.js"></script>
 
